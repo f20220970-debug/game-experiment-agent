@@ -1,0 +1,7 @@
+scenario,right_answer,guarded_agent_correct_pct,naive_agent_correct_pct,guarded_avg_days,naive_avg_days
+A/A test (no real difference),STOP: NO EFFECT,93.5,77.8,13.8,11.9
+True win: day-7 +1.5 pts,SHIP,99.8,100.0,5.9,2.5
+True loss: day-7 -1.5 pts,ROLLBACK,100.0,100.0,5.7,2.3
+Win on day-7 but day-1 falls 3 pts,ROLLBACK,94.5,0.0,2.2,2.5
+Win on day-7 but rounds fall 15%,ROLLBACK,99.5,0.0,2.6,2.5
+"Broken split (55/45), no difference",INVALID,100.0,0.0,1.0,11.8

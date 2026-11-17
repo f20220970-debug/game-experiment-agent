@@ -1,0 +1,164 @@
+{
+ "test": "Cookie Cats: first gate at level 30 (control) vs level 40 (treatment)",
+ "players": 90189,
+ "guarded_agent": {
+  "decision": {
+   "action": "ROLLBACK",
+   "reason": "day-7 retention down 1.25 pts (p=0.000638 < 0.00298)",
+   "checks": {
+    "n_control": 22350,
+    "n_treatment": 22744,
+    "srm_p": 0.06353956065220884,
+    "warnings": [],
+    "info_fraction": 0.49999445608666243,
+    "p_threshold": 0.0029793069783216404,
+    "d7": {
+     "control": 0.19302013422818792,
+     "treatment": 0.1804871614491734,
+     "diff": -0.012532972779014523,
+     "z": -3.414839903984587,
+     "p": 0.0006381951051390762,
+     "ci": [
+      -0.01972716059436255,
+      -0.0053387849636664965
+     ]
+    },
+    "d1": {
+     "control": 0.45243847874720355,
+     "treatment": 0.44662328526204714,
+     "diff": -0.005815193485156411,
+     "z": -1.2411748903720008,
+     "p": 0.21454114858264306,
+     "ci": [
+      -0.014998188359897677,
+      0.003367801389584854
+     ]
+    },
+    "rounds_control": 49.448322147651005,
+    "rounds_treatment": 48.42956032360183,
+    "rounds_rel_change": -0.02060255595745375,
+    "guardrail_breaches": []
+   }
+  },
+  "decided_on_day": 7,
+  "daily_log": [
+   {
+    "day": 1,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 7% of planned sample (p=0.775, need < 3.9e-15)"
+   },
+   {
+    "day": 2,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 14% of planned sample (p=0.847, need < 2.76e-08)"
+   },
+   {
+    "day": 3,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 21% of planned sample (p=0.562, need < 5.72e-06)"
+   },
+   {
+    "day": 4,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 29% of planned sample (p=0.0392, need < 8.54e-05)"
+   },
+   {
+    "day": 5,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 36% of planned sample (p=0.0165, need < 0.000441)"
+   },
+   {
+    "day": 6,
+    "action": "KEEP RUNNING",
+    "reason": "no decision yet at 43% of planned sample (p=0.00373, need < 0.00134)"
+   },
+   {
+    "day": 7,
+    "action": "ROLLBACK",
+    "reason": "day-7 retention down 1.25 pts (p=0.000638 < 0.00298)"
+   }
+  ],
+  "full_sample_review": {
+   "action": "ROLLBACK",
+   "reason": "day-7 retention down 0.82 pts (p=0.00155 < 0.0357)",
+   "checks": {
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "srm_p": 0.008607987810836262,
+    "warnings": [
+     "split is uneven (p=0.00861): check assignment"
+    ],
+    "info_fraction": 1.0,
+    "p_threshold": 0.035728841125633085,
+    "d7": {
+     "control": 0.19020134228187918,
+     "treatment": 0.18200004396667327,
+     "diff": -0.008201298315205913,
+     "z": -3.164358912748191,
+     "p": 0.001554249975614329,
+     "ci": [
+      -0.01328164577146224,
+      -0.003120950858949586
+     ]
+    },
+    "d1": {
+     "control": 0.4481879194630872,
+     "treatment": 0.44228274967574577,
+     "diff": -0.005905169787341458,
+     "z": -1.7840862247974725,
+     "p": 0.07440965529691913,
+     "ci": [
+      -0.012392558656738065,
+      0.0005822190820551484
+     ]
+    },
+    "rounds_control": 49.13583892617449,
+    "rounds_treatment": 48.84511860010116,
+    "rounds_rel_change": -0.005916665562790802,
+    "guardrail_breaches": []
+   }
+  }
+ },
+ "naive_agent": {
+  "decision": {
+   "action": "ROLLBACK",
+   "reason": "p=0.0392",
+   "checks": {
+    "d7": {
+     "control": 0.19238900634249473,
+     "treatment": 0.18236380424746076,
+     "diff": -0.010025202095033964,
+     "z": -2.062126867082367,
+     "p": 0.03919565905930192,
+     "ci": [
+      -0.0195548325136818,
+      -0.0004955716763861279
+     ]
+    }
+   }
+  },
+  "decided_on_day": 4,
+  "daily_log": [
+   {
+    "day": 1,
+    "action": "KEEP RUNNING",
+    "reason": "p=0.775"
+   },
+   {
+    "day": 2,
+    "action": "KEEP RUNNING",
+    "reason": "p=0.847"
+   },
+   {
+    "day": 3,
+    "action": "KEEP RUNNING",
+    "reason": "p=0.562"
+   },
+   {
+    "day": 4,
+    "action": "ROLLBACK",
+    "reason": "p=0.0392"
+   }
+  ]
+ }
+}

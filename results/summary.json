@@ -1,0 +1,23 @@
+{
+ "players": 90189,
+ "real_test": {
+  "guarded": "ROLLBACK",
+  "guarded_day": 7,
+  "naive": "ROLLBACK",
+  "naive_day": 4,
+  "d7_control": 0.19020134228187918,
+  "d7_treatment": 0.18200004396667327,
+  "d7_diff_pts": -0.8201298315205913,
+  "d7_p": 0.001554249975614329,
+  "d7_ci_pts": [
+   -1.328164577146224,
+   -0.3120950858949586
+  ],
+  "d1_diff_pts": -0.5905169787341458,
+  "srm_p": 0.008607987810836262,
+  "rounds_rel_change": -0.005916665562790802
+ },
+ "eval_runs_per_scenario": 400,
+ "guarded_overall_correct_pct": 97.88333333333333,
+ "naive_overall_correct_pct": 46.300000000000004
+}
